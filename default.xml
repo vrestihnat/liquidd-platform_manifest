@@ -19,6 +19,13 @@
 		   
   <remote  name="th"
            fetch="https://github.com/TeamHorizon" />
+           
+  <remote  name="ld"
+           revision="n"
+           fetch="https://github.com/LiquidDark/" />
+           
+  <remote  name="ldd"
+           fetch="https://github.com/LiquidDark-Devices/" />         
 
   <default revision="refs/heads/cm-14.1"
            remote="laos"
@@ -47,7 +54,7 @@
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="toolchain/binutils" name="toolchain/binutils" remote="aosp" />
 
-  <project path="build" name="android_build" groups="pdk,tradefed" remote="th" revision="n" >
+  <project path="build" name="android_build" groups="pdk,tradefed" remote="ld" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
@@ -349,7 +356,7 @@
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
 
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="th" revision="n-oms" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="ld" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
@@ -486,7 +493,7 @@
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/SafetyRegulatoryInfo" name="android_packages_apps_SafetyRegulatoryInfo" />
   <project path="packages/apps/Screencast" name="android_packages_apps_Screencast" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="th" revision="n-oms" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="ld" />
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="th" revision="n" />
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" groups="apps_stk,pdk-fs" />
@@ -610,6 +617,6 @@
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" />
   <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" />
   <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" />
-  <project path="vendor/xenonhd" name="vendor_xenonhd" remote="th" revision="n-oms" />
+  <project path="vendor/liquid" name="vendor_liquid" remote="ld" />
 
 </manifest>

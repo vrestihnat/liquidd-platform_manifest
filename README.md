@@ -1,12 +1,5 @@
-XenonHD
+LiquidDark
 ===========
-Blazing fast, Rock-Hard stability. 
-
-Getting Started
----------------
-To get started with the Xenon sources, you'll need to get
-familiar with [Git and Repo](http://source.android.com/source/version-control.html).
-
 
 Create the Directories
 ----------------------
@@ -16,7 +9,7 @@ You will need to set up some directories in your build environment.
 To create them run:
 
     mkdir -p ~/bin
-    mkdir -p ~/xenon
+    mkdir -p ~/liquid
 
 
 Install the Repository
@@ -29,29 +22,29 @@ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/rep
 You may need to reboot for these changes to take effect. 
 Now enter the following to initialize the repository:
 
-    cd ~/xenon
+    cd ~/liquid
 
 
-Initializing the XenonHD Source:
+Initializing the LiquidDark Source:
 ---------------
 
 For initializing repo use:
 
-    repo init -u https://github.com/TeamHorizon/platform_manifest.git -b n-oms
+    repo init -u https://github.com/LiquidDark/platform_manifest.git -b n
 
 Syncing repo:
 
     repo sync -j2 | -j4 |-j8 | -j32 (# of CPUs x2)
 
 
-Compiling XenonHD
+Compiling LiquidDark
 ---------------
 
 Set up environment:
 
     . build/envsetup.sh
     
-If your device is officially supported by TeamHorizon, you can do now:
+If your device is officially supported by LiquidDark, you can do now:
 
     breakfast <device_codename>
     
@@ -65,7 +58,7 @@ If your device is officially supported by TeamHorizon, you can do now:
 Adding support for new device
 ================
 
-If you want to be official maintainer and add XenonHD support for a new device you have to create these two files in device tree:
+If you want to be official maintainer and add LiquidDark support for a new device you have to create these two files in device tree:
 
 xenonhd.mk sample
 ----------
@@ -78,13 +71,13 @@ xenonhd.mk sample
     $(call inherit-product, device/<path>/device.mk) -- path to main device makefile
 
     # Inherit common product files.
-    $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
+    $(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
     # Set those variables here to overwrite the inherited values.
     BOARD_VENDOR := 
     PRODUCT_BRAND := 
     PRODUCT_DEVICE := 
-    PRODUCT_NAME := xenonhd_device
+    PRODUCT_NAME := liquid_device
     PRODUCT_MANUFACTURER := 
     PRODUCT_MODEL := 
     TARGET_VENDOR := 
@@ -107,22 +100,22 @@ Also you need to specify which camera app you want to use with:
       
 in one of your device's makefiles. Using the example above will give you both cameras installed.
 
-xenonhd.dependencies sample
+liquid.dependencies sample
 ----------
 
     [
       {
-        "repository": "TeamHorizon/android_kernel_<name>",
+        "repository": "LiquidDark-Devices/android_kernel_<name>",
         "target_path": "kernel/path",
         "branch": "n"
       },
       {
-        "repository": "TeamHorizon/proprietary_vendor_<name>",
+        "repository": "LiquidDark-Devices/proprietary_vendor_<name>",
         "target_path": "vendor/path",
         "branch": "n"
       },
       {
-        "repository": "LineageOS/android_device_<name>", -- if you need to use repos from another source
+        "repository": "CyanogenMod/android_device_<name>", -- if you need to use repos from another source
         "target_path": "device/path",
         "branch": "cm-14.1" -- you can also change the branch
       }
