@@ -49,7 +49,7 @@
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" remote="aosp" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" remote="aosp" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" />
-  <project path="platform_manifest" name="platform_manifest" remote="th" revision="n-oms" />
+  <project path="platform_manifest" name="platform_manifest" remote="ld" />
   <project path="platform_testing" name="platform/platform_testing" remote="aosp" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="toolchain/binutils" name="toolchain/binutils" remote="aosp" />
