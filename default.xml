@@ -25,7 +25,7 @@
            
   <remote  name="ld"
            revision="n"
-           fetch="https://github.com/LiquidDark/" />
+           fetch="https://github.com/Liquid-Dark/" />
            
   <remote  name="ldd"
            fetch="https://github.com/LiquidDark-Devices/" />
