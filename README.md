@@ -30,11 +30,11 @@ Initializing the LiquidDark Source:
 
 For initializing repo use:
 
-    repo init -u https://github.com/LiquidDark/platform_manifest.git -b n
+    repo init -u https://github.com/Liquid-Dark/platform_manifest.git -b n
 
 Syncing repo:
 
-    repo sync -j2 | -j4 |-j8 | -j32 (# of CPUs x2)
+    repo sync -c --force-broken --force-sync --no-clone-bundle --no-tags -j$(grep -c ^processor /proc/cpuinfo)
 
 
 Compiling LiquidDark
