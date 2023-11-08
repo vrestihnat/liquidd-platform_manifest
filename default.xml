@@ -23,10 +23,7 @@
   <remote  name="th"
            fetch="https://github.com/TeamHorizon" />
   
-  <remote  name="myld"
-           revision="n"
-           fetch="https://github.com/vrestihnat/" />
-	
+
   <remote  name="ld"
            revision="n"
            fetch="https://github.com/Liquid-Dark/" />
@@ -65,7 +62,7 @@
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" remote="aosp" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" remote="aosp" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" />
-  <project path="liquidd-platform_manifest" name="platform_manifest" remote="myld" />
+  <project path="platform_manifest" name="platform_manifest" remote="ld" />
   <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts" remote="aosp" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="toolchain/binutils" name="toolchain/binutils" remote="aosp" />
