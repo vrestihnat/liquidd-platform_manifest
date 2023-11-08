@@ -30,7 +30,7 @@ Initializing the LiquidDark Source:
 
 For initializing repo use:
 
-    repo init -u https://github.com/Liquid-Dark/platform_manifest.git -b n
+    repo init -u https://github.com/vrestihnat/liquidd-platform_manifest.git -b n
 
 Syncing repo:
 
