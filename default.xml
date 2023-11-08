@@ -113,7 +113,6 @@
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk" remote="aosp" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk" remote="aosp" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" remote="aosp" />
-  <project path="external/chromium-webview/prebuilt/arm" name="android_external_chromium-webview_prebuilt_arm" groups="pdk" remote="lineage" clone-depth="1" revision="main" />
   <project path="external/clang" name="platform/external/clang" groups="pdk" remote="aosp" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk" remote="aosp" />
   <project path="external/cmsdk-api-coverage" name="android_external_cmsdk-api-coverage" />
